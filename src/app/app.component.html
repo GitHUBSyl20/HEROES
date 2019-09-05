@@ -1,0 +1,20 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+    Welcome to {{ title }}!
+  </h1>
+  <nav>
+<ul>
+  <li><a routerLink="/dashboard">Dashboard</a></li>
+  <li><a routerLink="/heroes">Heroes</a></li>
+</ul>
+    
+      <!---The routerLink is the selector for the RouterLink directive that turns user clicks into router navigations.-->
+      <!--It's another of the public directives in the RouterModule.-->
+    
+  </nav>
+  <!--En ayant mis en place le router il faut alors préciser dans l'url 
+    //l'adresse exacte pour avoir accès au composant correspondant au peth -->
+  <router-outlet></router-outlet>
+ <app-message></app-message>
+
